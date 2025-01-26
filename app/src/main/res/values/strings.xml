@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Temporizador Widget</string>
+    <string name="timer_label">Temporizador</string>
+</resources>

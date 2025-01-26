@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Especifica el tamaño del widget -->
+    <minWidth>200dp</minWidth>
+    <minHeight>200dp</minHeight>
+    <updatePeriodMillis>1000</updatePeriodMillis>  <!-- Actualización cada 60 segundos -->
+    <initialLayout>@layout/widget_layout</initialLayout>
+    <configure>com.example.temporizador_widget.MainActivity</configure>
+</appwidget-provider>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000FF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Barra de configuración en la parte superior -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Botón de configuración -->
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Configuración"
+            android:src="@drawable/ic_menu"
+            android:text="Configuración"
+            android:textColor="#DED5EBFF" />
+    </RelativeLayout>
+
+    <!-- GridLayout para las horas, minutos y segundos -->
+    <GridLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:columnCount="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <!-- Títulos -->
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="Horas"
+            android:textColor="#DED5EBFf"
+            android:textSize="22sp" /> <!-- Aumento del tamaño del texto -->
+
+        <TextView
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="Minutos"
+            android:textColor="#DED5EBFf"
+            android:textSize="22sp" /> <!-- Aumento del tamaño del texto -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:gravity="center"
+            android:text="Segundos"
+            android:textColor="#DED5EBFf"
+            android:textSize="22sp" /> <!-- Aumento del tamaño del texto -->
+
+        <android.widget.NumberPicker
+            android:id="@+id/hoursPicker"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="25sp" /> <!-- Aumento del tamaño de los números -->
+
+        <!-- Minutos -->
+        <android.widget.NumberPicker
+            android:id="@+id/minutesPicker"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="22sp" /> <!-- Aumento del tamaño de los números -->
+
+        <!-- Segundos -->
+        <android.widget.NumberPicker
+            android:id="@+id/secondsPicker"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:textSize="22sp" /> <!-- Aumento del tamaño de los números -->
+    </GridLayout>
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:backgroundTint="#292929">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_gravity="center"
+            android:text="00:00:10"
+            android:textAlignment="center"
+            android:textColor="#DED5EBFF"
+            android:textSize="36sp" 
+            android:typeface="monospace"/> 
+    </FrameLayout>
+
+    <!-- Botón de iniciar temporizador -->
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="Iniciar"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+
+
+        <!-- Espacio para separar el contenido principal de la parte inferior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Créditos en la parte inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:background="#1B1A1A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollado por:"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silvia Ivón Añasco Rivadeneira\nSheylee Arielle Enriquez Hernández\nYorman Javier Oña Gamarra\nAlex Fernando Trejo Duque"
+            android:textColor="#B0BEC5"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

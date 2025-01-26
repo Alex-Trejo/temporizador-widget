@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="timer_duration"
+        android:title="Duración del temporizador"
+        android:dialogTitle="Establecer duración (en segundos)"
+        android:inputType="number"
+        android:defaultValue="60"
+        android:summary="Duración por defecto: 60 segundos" />
+
+    <SwitchPreferenceCompat
+        android:key="vibration_enabled"
+        android:title="Vibración al finalizar"
+        android:defaultValue="true"
+        android:summary="Activa o desactiva la vibración al finalizar el temporizador" />
+
+    <Preference
+        android:key="select_sound"
+        android:title="Seleccionar sonido de notificación"
+        android:summary="Selecciona un sonido de notificación personalizado" />
+        
+</PreferenceScreen>

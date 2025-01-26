@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000FF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    
+
+    <!-- Círculo para el temporizador con progreso -->
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="#292929">
+
+        <TextView
+            android:id="@+id/countdownTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00:00"
+            android:typeface="monospace"
+            android:textAlignment="center"
+            android:textColor="#DED5EBFF"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+    <!-- Botones de Pausa y Eliminar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Botón de Pausar/Reiniciar -->
+
+        <!-- Botón de Cancelar -->
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:color="#6200EE"
+            android:text="Pausar"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Cancelar"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
